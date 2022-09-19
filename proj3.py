@@ -57,11 +57,9 @@ def doreply(instr):
                 # 9. If the user likes the idea of moving into the woods"
                 if re.search("good|Good|Great|okay", instr):
                     return "Great! Enjoy nature!"
+                # 10. If the user doesn't like the idea, suggest that they change their mind
                 if re.search("Bad|bad|not good", instr):
                     return "I think you're making the wrong call but okay. Anything else I should know about you?"
-
-    # 10. 
-
 
     return "That's very good to know.\nTell more more about yourself..."
 
